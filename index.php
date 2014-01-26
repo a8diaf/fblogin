@@ -58,7 +58,16 @@
           console.log('Good to see you, ' + response.name + '.');
         });
       }
+      $('#logout').click(function(event) {
+        event.preventDefault();
+        if (FB) {
+          FB.logout();
+        };
+        
+      });
     });
   </script>
+
+  <a href="" id="logout">logout</a>
 </body>
 </html>
